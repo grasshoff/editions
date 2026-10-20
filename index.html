@@ -1,60 +1,68 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Landings 2026</title>
+<title>Famulus · Editions</title>
+<meta name="description" content="The editions and archives Famulus works on: 12 portals.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
-:root { --blue:#002147; --gold:#c8a22a; --paper:#faf8f3; --ink:#1c1915; }
-body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.5 Palatino, "Iowan Old Style", Georgia, serif; }
-header { background:var(--blue); color:#f4ead0; padding:2.4rem 8vw 1.5rem; }
-header p { margin:.35rem 0 0; font:15px/1.4 -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing:.04em; color:var(--gold); }
-h1 { font-weight:500; font-size:2.5rem; margin:0; }
-.rule { height:3px; background:var(--gold); }
-main { padding:1.8rem 8vw 3.5rem; max-width:1080px; }
-.grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:1rem; }
-article.card { display:flex; flex-direction:column; background:#fffdf9; border:1px solid #e4dcc8; border-top:3px solid var(--gold); padding:1.05rem 1.15rem 1.1rem; min-height:7.5rem; }
-article.card strong { color:var(--blue); font-size:1.2rem; }
-.links { margin-top:auto; padding-top:.8rem; font:13px/1.3 -apple-system, BlinkMacSystemFont, sans-serif; }
-.links a { color:var(--blue); margin-right:.85rem; }
-h2 { color:var(--blue); font-weight:500; font-size:1.25rem; margin:2.2rem 0 .4rem; }
-.note, li { font:16px/1.45 -apple-system, BlinkMacSystemFont, sans-serif; color:#3d3830; }
-ul { padding-left:1.1rem; }
-a { color:var(--blue); }
+:root { --blue:#002147; --gold:#c8a22a; --paper:#faf8f3; --sheet:#fffdf9; --ink:#1c1915; --muted:#5b5648; --line:#e4dcc8; }
+@media (prefers-color-scheme: dark) { :root { --paper:#121417; --sheet:#1a1d21; --ink:#ece6d6; --muted:#a59f90; --line:#2c3036; } }
+body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.5 Georgia, "Source Serif 4", serif; }
+header { background:var(--blue); border-bottom:3px solid var(--gold); }
+nav { max-width:1080px; margin:0 auto; padding:.8rem 16px; display:flex; flex-wrap:wrap; gap:.4rem 1.2rem;
+       font:600 14px/1.3 -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing:.03em; }
+nav a { color:#f4ead0; text-decoration:none; } nav a:first-child { color:var(--gold); }
+.head { max-width:1080px; margin:0 auto; padding:2.2rem 16px 1.6rem; color:#f4ead0; }
+h1 { font-weight:500; font-size:clamp(2rem, 6vw, 2.8rem); margin:0 0 .5rem; }
+.lead { max-width:44rem; margin:0; color:#e6dcc2; }
+main { max-width:1080px; margin:0 auto; padding:1rem 16px 3.5rem; }
+h2 { color:var(--ink); font-weight:500; font-size:1.3rem; margin:2rem 0 .8rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:1rem; }
+article.card { display:flex; flex-direction:column; background:var(--sheet); border:1px solid var(--line); border-top:3px solid var(--gold); padding:1.05rem 1.15rem 1.1rem; }
+article.card strong { font-size:1.2rem; font-weight:600; }
+.badge { margin:0 0 .3rem; color:#8a6d16; font:600 12px/1.3 -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing:.05em; text-transform:uppercase; }
+@media (prefers-color-scheme: dark) { .badge { color:var(--gold); } }
+.txt { margin:.45rem 0 0; color:var(--muted); font-size:16px; line-height:1.45; }
+.links { margin-top:auto; padding-top:.9rem; display:flex; flex-wrap:wrap; gap:.5rem; font:600 14px/1.2 -apple-system, BlinkMacSystemFont, sans-serif; }
+.links a { color:var(--ink); padding:.45rem .7rem; border:1px solid var(--line); border-bottom:2px solid var(--gold); text-decoration:none; }
+.links a.go { background:var(--blue); color:#fff; border-color:var(--blue); border-bottom-color:var(--gold); }
+.note { color:var(--muted); font:14px/1.5 -apple-system, BlinkMacSystemFont, sans-serif; margin-top:2.4rem; }
 </style>
 </head>
 <body>
 <header>
-<p>LETTREAI</p>
-<h1>Landings 2026</h1>
+<nav><a href="/">Famulus</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/docs/">Docs</a><a href="/editions/">Editions</a></nav>
+<div class="head"><h1>Editions and archives</h1>
+<p class="lead">The collections Famulus works on. A portal introduces a collection; “Open the edition” goes to the edition reader itself.</p></div>
 </header>
-<div class="rule"></div>
 <main>
-<p class="note">15 Seiten, die von außen antworten. Seite öffnet GitHub Pages. Ausgabe öffnet die Edition. Intern ist die Adresse im Tailscale-Netz.</p>
+<h2>Astronomy and the exact sciences of the early modern period</h2>
 <div class="grid">
-<article class="card"><strong>Euler</strong><span class="links"><a href="https://famulus.lettre.ai/euler/">Seite</a><a href="https://lettre.ngrok.dev/euler-opera/">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/euler-opera/">Intern</a></span></article>
-<article class="card"><strong>Kepler</strong><span class="links"><a href="https://famulus.lettre.ai/kepler/">Seite</a><a href="https://lettre.ngrok.dev/kepler-gw/">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/kepler-gw/">Intern</a></span></article>
-<article class="card"><strong>Brahe</strong><span class="links"><a href="https://famulus.lettre.ai/brahe/">Seite</a><a href="https://lettre.ngrok.dev/brahe-oo/">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/brahe-oo/">Intern</a></span></article>
-<article class="card"><strong>Kármán-Nachlass</strong><span class="links"><a href="https://famulus.lettre.ai/karman/">Seite</a><a href="https://lettre.ngrok.dev/karman/">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/karman/">Intern</a></span></article>
-<article class="card"><strong>Kopernikus</strong><span class="links"><a href="https://famulus.lettre.ai/kopernikus/">Seite</a><a href="https://lettre.ngrok.dev/copernicus/">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/copernicus/">Intern</a></span></article>
-<article class="card"><strong>Babylonische Astronomie</strong><span class="links"><a href="https://famulus.lettre.ai/babylon/">Seite</a><a href="https://lettre.ngrok.dev/diaries/">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/diaries/">Intern</a></span></article>
-<article class="card"><strong>Ancient Sundials</strong><span class="links"><a href="https://famulus.lettre.ai/sundials/">Seite</a><a href="https://lettre.ngrok.dev/sundials/overview">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/sundials/overview">Intern</a></span></article>
-<article class="card"><strong>Antike Sonnenuhren</strong><span class="links"><a href="https://famulus.lettre.ai/sundials/de/">Seite</a><a href="https://lettre.ngrok.dev/sundials/overview">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/sundials/overview">Intern</a></span></article>
-<article class="card"><strong>Kausalität</strong><span class="links"><a href="https://famulus.lettre.ai/kausalitaet/">Seite</a><a href="https://mac-studio.tail147011.ts.net/kausalitaet/">Intern</a></span></article>
-<article class="card"><strong>Mittelalterliche Handschriften</strong><span class="links"><a href="https://famulus.lettre.ai/medieval/">Seite</a><a href="https://lettre.ngrok.dev/medieval-sec/Bischoff1998?p=30">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/medieval-sec/Bischoff1998?p=30">Intern</a></span></article>
-<article class="card"><strong>Wittgenstein und die Mechanik</strong><span class="links"><a href="https://famulus.lettre.ai/wittgenstein-mechanik/">Seite</a><a href="https://lettre.ngrok.dev/wittgenstein-mechanik/Hertz1894?p=30">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/wittgenstein-mechanik/Hertz1894?p=30">Intern</a></span></article>
-<article class="card"><strong>Tractatus-Typoskripte</strong><span class="links"><a href="https://famulus.lettre.ai/tractatus-typoskripte/">Seite</a><a href="https://lettre.ngrok.dev/tractatus-typoskripte/GrasshoffLampert2003?p=11">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/tractatus-typoskripte/GrasshoffLampert2003?p=11">Intern</a></span></article>
-<article class="card"><strong>Famulus</strong><span class="links"><a href="https://famulus.lettre.ai/">Seite</a><a href="https://mac-studio.tail147011.ts.net/famulus/">Intern</a></span></article>
-<article class="card"><strong>Famulus News</strong><span class="links"><a href="https://famulus.lettre.ai/news/">Seite</a><a href="https://mac-studio.tail147011.ts.net/famulus-news/">Intern</a></span></article>
-<article class="card"><strong>Kepleriana 2026</strong><span class="links"><a href="https://famulus.lettre.ai/kepleriana/">Seite</a><a href="https://lettre.ngrok.dev/kepleriana-munich-2024/">Ausgabe</a><a href="https://mac-studio.tail147011.ts.net/kepleriana-munich-2024/">Intern</a></span></article>
+<article class="card"><p class="badge">Collected works and letters</p><strong>Johannes Kepler</strong><p class="txt">The Collected Works as full text, a register of letters, and Famulus notebooks that put questions to the Latin text, such as lex and natura, or anima and vis.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/kepler/">Portal</a><a href="https://lettre.ngrok.dev/kepler-gw/">Open the edition</a></span></article>
+<article class="card"><p class="badge">Opera omnia</p><strong>Tycho Brahe</strong><p class="txt">The Opera omnia in Dreyer&#x27;s edition, with the tables of the transcription and the star catalogues.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/brahe/">Portal</a><a href="https://lettre.ngrok.dev/brahe-oo/">Open the edition</a></span></article>
+<article class="card"><p class="badge">Works and literature</p><strong>Nicolaus Copernicus</strong><p class="txt">The works and editions of Copernicus and the secondary literature, with the languages of the corpus.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/kopernikus/">Portal</a><a href="https://lettre.ngrok.dev/copernicus/">Open the edition</a></span></article>
+<article class="card"><p class="badge">Opera omnia and letters</p><strong>Leonhard Euler</strong><p class="txt">The Opera omnia, the Eneström index and the correspondence of series IVA.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/euler/">Portal</a><a href="https://lettre.ngrok.dev/euler-opera/">Open the edition</a></span></article>
 </div>
-<h2>Auf dieser Maschine</h2>
-<p class="note">Diese Seiten bleiben auf dieser Maschine: Hevelius wegen der Rechte bei Brepols; die Publikationen, weil es Entwürfe sind; Famulus Elucidation.</p>
-<ul>
-<li><a href="https://lettre.ngrok.dev/hevelius-portal/">Hevelius</a></li>
-<li><a href="https://lettre.ngrok.dev/arxiv/">Publikationen</a></li>
-<li><a href="https://lettre.ngrok.dev/elucidation/">Famulus Elucidation</a></li>
-</ul>
+<h2>Ancient and medieval sources</h2>
+<div class="grid">
+<article class="card"><p class="badge">Astronomical Diaries</p><strong>Babylonian astronomy</strong><p class="txt">The Astronomical Diaries as a cuneiform tablet edition under its own DTD, with a layered audit and a famulus-reference extension.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/babylon/">Portal</a><a href="https://lettre.ngrok.dev/diaries/">Open the edition</a></span></article>
+<article class="card"><p class="badge">Measured on 3D models</p><strong>Ancient sundials</strong><p class="txt">The Berlin register of sundials, measured on the 3D models. The pilot case of literate coding with AI agents.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/sundials/">Portal</a><a href="https://lettre.ngrok.dev/sundials/overview">Open the edition</a></span></article>
+<article class="card"><p class="badge">Bischoff&#x27;s catalogue</p><strong>Medieval manuscripts</strong><p class="txt">Bischoff&#x27;s catalogue of the continental manuscripts of the ninth century, with holdings, places and the structure of an entry.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/medieval/">Portal</a><a href="https://lettre.ngrok.dev/medieval-sec/Bischoff1998?p=30">Open the edition</a></span></article>
+</div>
+<h2>Philosophy, physics and estates</h2>
+<div class="grid">
+<article class="card"><p class="badge">Papers and letters</p><strong>Theodore von Kármán</strong><p class="txt">The papers of the aerodynamicist, with correspondence, manuscripts and Famulus notebooks. The first large test case of Famulus Reference.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/karman/">Portal</a><a href="https://lettre.ngrok.dev/karman/">Open the edition</a></span></article>
+<article class="card"><p class="badge">Regularity theory</p><strong>Causality</strong><p class="txt">The regularity theory of causal relevance by Graßhoff and May, its picture language, the case book and the program.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/kausalitaet/">Portal</a></span></article>
+<article class="card"><p class="badge">The mechanical background</p><strong>Wittgenstein and mechanics</strong><p class="txt">Hertz&#x27;s Principles of Mechanics, Reuleaux&#x27;s Theoretical Kinematics and Graßhoff&#x27;s papers on the mechanical background of the Tractatus.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/wittgenstein-mechanik/">Portal</a><a href="https://lettre.ngrok.dev/wittgenstein-mechanik/Hertz1894?p=30">Open the edition</a></span></article>
+<article class="card"><p class="badge">Genesis 1918 to 1922</p><strong>The Tractatus typescripts</strong><p class="txt">The typescripts and corrected copies of Wittgenstein&#x27;s Tractatus, with the history of their genesis.</p><span class="links"><a class="go" href="https://famulus.lettre.ai/tractatus-typoskripte/">Portal</a><a href="https://lettre.ngrok.dev/tractatus-typoskripte/GrasshoffLampert2003?p=11">Open the edition</a></span></article>
+</div>
+<h2>More editions</h2>
+<div class="grid">
+<article class="card"><strong>Kepleriana 2026</strong><span class="links"><a class="go" href="https://famulus.lettre.ai/kepleriana/">Portal</a><a href="https://lettre.ngrok.dev/kepleriana-munich-2024/">Open the edition</a></span></article>
+</div>
+<p class="note">12 portals, each checked to answer from outside when this page was built. An edition reader is a live service and answers only while the platform machines are running.</p>
 </main>
 </body>
 </html>
